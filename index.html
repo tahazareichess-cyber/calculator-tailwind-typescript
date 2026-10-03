@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Calculator</title>
+</head>
+<body class="flex items-center justify-center h-screen m-0 p-0">
+    <div class="calculator bg-black text-white p-5 border-0 rounded-[3%]">
+        <input type="text" id="calculatorView" readonly class=" text-[20px] overflow-hidden text-white p-3 text-whtie bg-olive-800 mb-[10px] w-[100%] rounded">
+        <div class="calculator-btn grid grid-cols-4 bg-olive-800 p-5 text-[30px] rounded gap-[10px]">
+            <button class=" w-[50px] border rounded-[1000px] bg-orange-500 hover:bg-orange-400 active:bg-orange-300" onclick="showDisplay('+')">+</button>
+            <button class=" w-[50px] border rounded-[1000px] bg-stone-600 hover:bg-stone-500 active:bg-stone-400" onclick="showDisplay(1)">1</button>
+            <button  class=" w-[50px] border rounded-[1000px] bg-stone-600 hover:bg-stone-500 active:bg-stone-400"onclick="showDisplay(2)">2</button>
+            <button  class=" w-[50px] border rounded-[1000px] bg-stone-600 hover:bg-stone-500 active:bg-stone-400"onclick="showDisplay(3)">3</button>
+            <button class="border rounded-[1000px] bg-orange-500 hover:bg-orange-400 active:bg-orange-300" onclick="showDisplay('-')">-</button>
+            <button  class=" w-[50px] border rounded-[1000px] bg-stone-600 hover:bg-stone-500 active:bg-stone-400"onclick="showDisplay(4)">4</button>
+            <button  class=" w-[50px] border rounded-[1000px] bg-stone-600 hover:bg-stone-500 active:bg-stone-400"onclick="showDisplay(5)">5</button>
+            <button  class=" w-[50px] border rounded-[1000px] bg-stone-600 hover:bg-stone-500 active:bg-stone-400"onclick="showDisplay(6)">6</button>
+            <button class="border rounded-[1000px] bg-orange-500 hover:bg-orange-400 active:bg-orange-300" onclick="showDisplay('*')">*</button>
+            <button  class=" w-[50px] border rounded-[1000px] bg-stone-600 hover:bg-stone-500 active:bg-stone-400"onclick="showDisplay(7)">7</button>
+            <button  class=" w-[50px] border rounded-[1000px] bg-stone-600 hover:bg-stone-500 active:bg-stone-400"onclick="showDisplay(8)">8</button>
+            <button  class=" w-[50px] border rounded-[1000px] bg-stone-600 hover:bg-stone-500 active:bg-stone-400"onclick="showDisplay(9)">9</button>
+            <button  class="border rounded-[1000px] bg-orange-500 hover:bg-orange-400 active:bg-orange-300" onclick="showDisplay('/')">/</button>
+            <button  class="border rounded-[1000px] bg-orange-500 hover:bg-orange-400 active:bg-orange-300" onclick="clearDisplay()">C</button>
+            <button  class=" w-[50px] border rounded-[1000px] bg-stone-600 hover:bg-stone-500 active:bg-stone-400"onclick="showDisplay('0')">0</button>
+            <button  class=" w-[50px] border rounded-[1000px] bg-green-600 hover:bg-green-500 active:bg-green-400"onclick="calculates()">=</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
